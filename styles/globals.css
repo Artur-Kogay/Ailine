@@ -17,4 +17,9 @@ a {
 
 .container {
   padding: 0 6rem;
+  position: relative;
+}
+
+.swiper-slide span, .swiper-slide-active span {
+  width: 100% !important;
 }
