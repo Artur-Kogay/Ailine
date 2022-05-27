@@ -12,7 +12,7 @@ const MainSlider = () => {
     <div className={style.swiperBlock}>
       <Swiper navigation={true} modules={[Navigation]} className={style.swiper}>
         <SwiperSlide className={style.swiperItem}>
-          <div className={style.background}></div>
+          <div className={style.background}/>
           <div className={"container"}>
             <div className={style.content}>
               <h1>Ваш надежный партнер!</h1>
@@ -26,7 +26,7 @@ const MainSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className={style.swiperItem}>
-          <div className={style.background}></div>
+          <div className={style.background}/>
           <div className={"container"}>
             <div className={style.content}>
               <h1>Ваш надежный партнер!</h1>

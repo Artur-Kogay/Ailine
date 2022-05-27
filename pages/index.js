@@ -4,12 +4,14 @@ import styles from "../styles/Home.module.css";
 import Header from "../src/components/Header/Header";
 import MainSlider from "../src/components/MainSlider/MainSlider";
 import Footer from "../src/components/Footer/Footer";
+import About from "../src/components/About/About";
 
 export default function Home() {
   return (
     <>
       <Header />
       <MainSlider />
+      <About />
       <Footer />
     </>
   );
