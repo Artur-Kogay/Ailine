@@ -12,6 +12,7 @@ import Services from "../src/components/Services/Services";
 import Team from "../src/components/Team/Team";
 import Skill from "../src/components/Skill/Skill";
 import Ompanies from "../src/components/Ompanies/Ompanies";
+import WorkingProccess from "../src/components/WorkingProccess/WorkingProccess";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <About />
       <Services />
       <Team />
+      <WorkingProccess />
       <Ompanies />
       <Skill />
       <Form />
