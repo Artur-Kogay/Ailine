@@ -10,7 +10,7 @@ import PhotoForSlide1 from "../../assets/jpg/mainBackground.jpg";
 const MainSlider = () => {
   return (
     <div className={style.swiperBlock}>
-      <Swiper navigation={true} modules={[Navigation]} className={style.swiper}>
+      <Swiper slidesPerView={2} navigation={true} modules={[Navigation]} className={style.swiper}>
         <SwiperSlide className={style.swiperItem}>
           <div className={style.background}/>
           <div className={"container"}>
