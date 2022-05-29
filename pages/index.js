@@ -10,6 +10,8 @@ import Largest from "../src/components/LargestBlock/Largest";
 import Form from "../src/components/Form/Form";
 import Services from "../src/components/Services/Services";
 import Team from "../src/components/Team/Team";
+import Skill from "../src/components/Skill/Skill";
+import Ompanies from "../src/components/Ompanies/Ompanies";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <About />
       <Services />
       <Team />
+      <Ompanies />
+      <Skill />
       <Form />
       <Largest />
       <PreFooter />
