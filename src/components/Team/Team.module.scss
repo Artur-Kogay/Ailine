@@ -1,0 +1,99 @@
+.wrapper {
+  .backgroundBlock {
+    padding: 100px 0;
+    width: 100%;
+    height: 65vh;
+    background: url("../../assets/jpg/team-bg.jpg");
+    background-size: cover;
+
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      h2 {
+        font-size: 35px;
+        color: #fff;
+      }
+
+      .typography {
+        padding-left: 20px;
+        border-left: 10px solid #29c75d;
+
+        p {
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+
+    @media screen and (max-width: 860px) {
+      height: auto;
+
+      .header {
+        grid-template-columns: 1fr;
+
+        .typography {
+          border: none;
+          border-top: 10px solid #29c75d;
+        }
+      }
+    }
+  }
+  .sliderBlock {
+    position: relative;
+    top: -150px;
+    .mySwiper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 50px 0;
+      .item {
+        width: 345px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        .upper {
+          width: 345px;
+          height: 350px;
+          background: #e6e8e7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .lower {
+          width: 80%;
+          height: 50%;
+          border-bottom: 5px solid #29c75d;
+          background-color: #fff;
+          text-align: center;
+          position: relative;
+          top: -30px;
+          padding: 20px 0;
+          transition: background-color 0.5s;
+
+          h3 {
+            color: #000;
+            font-size: 25px;
+            transition: 0.5s;
+          }
+
+          h3:hover {
+            transition: 0.5s;
+            color: #fff;
+          }
+
+          p {
+            font-size: 20px;
+            color: #999;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1290px) {
+      top: 50px;
+    }
+  }
+}

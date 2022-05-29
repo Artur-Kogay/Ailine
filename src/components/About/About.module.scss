@@ -1,5 +1,6 @@
 .aboutWrapper {
   position: relative;
+  margin-bottom: 100px;
   .blocks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -128,6 +129,16 @@
 
         .signature {
           margin-left: auto;
+        }
+      }
+    }
+
+    @media screen and (max-width: 860px) {
+      grid-template-columns: 1fr;
+
+      .leftBlock {
+        .greenBlock {
+          height: 100%;
         }
       }
     }

@@ -6,11 +6,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import style from "./MainSlider.module.scss";
 import PhotoForSlide1 from "../../assets/jpg/mainBackground.jpg";
+import {useMediaQuery} from "@mui/material";
 
 const MainSlider = () => {
+  const isMinTablet = useMediaQuery('(max-width: 860px)')
   return (
     <div className={style.swiperBlock}>
-      <Swiper navigation={true} modules={[Navigation]} className={style.swiper}>
+      <Swiper navigation={!isMinTablet} modules={[Navigation]} className={style.swiper}>
         <SwiperSlide className={style.swiperItem}>
           <div className={style.background}/>
           <div className={"container"}>
