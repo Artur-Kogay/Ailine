@@ -2,7 +2,7 @@ import React from 'react';
 import cl from './Largest.module.scss';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
-import { Autoplay, Navigation } from 'swiper'
+import { Autoplay } from 'swiper'
 import Image from 'next/image';
 import q from '../../assets/swip1.jpg';
 import w from '../../assets/swip2.jpg';
@@ -28,15 +28,14 @@ const Largest = () => {
                     <Swiper
                         resizeObserver={true}
                         rewind={true}
-                        slidesPerView={isPlanshet ? 2 : isMobile ? 1 : 3}
+                        slidesPerView={isPlanshet ? 2 : (isMobile ? 1 : 3)}
                         spaceBetween={40}
                         className={cl.mySwiper}
-                        navigation={true}
                         autoplay={{
                             delay: 3500,
                             disableOnInteraction: false,
                         }}
-                        modules={[Autoplay, Navigation]}
+                        modules={[Autoplay]}
                     >
                         <SwiperSlide className={cl.swipItem}>
                             <Image src={q} className={cl.img} />
