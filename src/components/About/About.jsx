@@ -4,6 +4,8 @@ import style from "./About.module.scss";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import AboutImg from "../../assets/jpg/aboutBlockImg.jpg";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
+import Founder from "../../assets/jpg/about-admin.jpg";
+import Signature from "../../assets/png/signature.png";
 
 const About = () => {
   return (
@@ -54,14 +56,40 @@ const About = () => {
               notted adipisicing elit sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua lonm andhn.
             </p>
-            <div className={style.blockAbout}>
-              <PowerSettingsNewIcon sx={{color: "#29c75d"}} />
-              <div>
-                <h2>It service for business network.</h2>
-                <p>
-                  ill give you a complete account of the system, and expound the
-                  actual teachings...
-                </p>
+
+            <div className={style.blockAbouts}>
+              <div className={style.blockAbout}>
+                <PowerSettingsNewIcon sx={{ color: "#29c75d", fontSize: 70 }} />
+                <div>
+                  <h4>It service for business network.</h4>
+                  <p>
+                    ill give you a complete account of the system, and expound
+                    the actual teachings...
+                  </p>
+                </div>
+              </div>
+              <div className={style.blockAbout}>
+                <PowerSettingsNewIcon sx={{ color: "#29c75d", fontSize: 70 }} />
+                <div>
+                  <h4>It service for business network.</h4>
+                  <p>
+                    ill give you a complete account of the system, and expound
+                    the actual teachings...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={style.hr} />
+            <div className={style.founder}>
+              <div className={style.imgBlock}>
+                <Image src={Founder} />
+                <span>
+                  <h4>Marc Antoine Brane</h4>
+                  <p>Co-Founder</p>
+                </span>
+              </div>
+              <div className={style.signature}>
+                <Image src={Signature} />
               </div>
             </div>
           </div>

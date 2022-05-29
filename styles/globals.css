@@ -22,6 +22,29 @@ a {
   position: relative;
 }
 
-.swiper-slide span, .swiper-slide-active span {
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+.swiper-slide span,
+.swiper-slide-active span {
   width: 100% !important;
+}
+
+.greenContent {
+  color: #29c75d;
 }
