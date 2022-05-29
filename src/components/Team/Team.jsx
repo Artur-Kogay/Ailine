@@ -21,6 +21,7 @@ const Team = () => {
     <div className={style.wrapper}>
       <div className={style.backgroundBlock}>
         <div className={"container"}>
+        <h3 className={style.title}>Our Team Members</h3>
           <div className={style.header}>
             <h2>
               We Business and{" "}

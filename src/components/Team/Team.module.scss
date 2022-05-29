@@ -6,6 +6,10 @@
     background: url("../../assets/jpg/team-bg.jpg");
     background-size: cover;
 
+    .title {
+      color: #fff;
+    }
+
     .header {
       display: grid;
       grid-template-columns: 1fr 1fr;
