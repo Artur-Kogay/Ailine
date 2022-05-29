@@ -96,4 +96,14 @@
       justify-content: center;
     }
   }
+  @media screen and (max-width: 860px) {
+    .header {
+      grid-template-columns: 1fr;
+
+      .typography {
+        border-left: none !important;
+        border-top: 10px solid #29c75d;
+      }
+    }
+  }
 }
