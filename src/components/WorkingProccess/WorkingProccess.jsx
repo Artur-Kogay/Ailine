@@ -11,8 +11,8 @@ const WorkingProccess = () => {
         <h3 className={style.title}>Процесс работы</h3>
         <div className={style.header}>
           <h2>
-           Мы{" "}
-            <span className="greenContent">меняем подход работы</span> каждому проекту
+            Мы <span className="greenContent">меняем подход работы</span>{" "}
+            каждому проекту
           </h2>
           <span className={style.typography}>
             <p>
@@ -24,16 +24,13 @@ const WorkingProccess = () => {
         </div>
         <div className={style.items}>
           <div className={style.item}>
+            <div className={style.greenBackground}></div>
             <div className={style.imgBlock}>
               <Image src={Work1} />
               <div className={style.number}>1</div>
             </div>
             <div className={style.contentBlock}>
-              <h3>Inspect & Analyze</h3>
-              <p>
-                must to you how all this mistaken idea of denou pleasure and
-                praising.
-              </p>
+              <p>Качественный и понятный код</p>
             </div>
           </div>
           <div className={style.item}>
@@ -42,10 +39,8 @@ const WorkingProccess = () => {
               <div className={style.number}>2</div>
             </div>
             <div className={style.contentBlock}>
-              <h3>Inspect & Analyze</h3>
               <p>
-                must to you how all this mistaken idea of denou pleasure and
-                praising.
+                Постоянный профессиональный рост каждого нашего разработчика
               </p>
             </div>
           </div>
@@ -55,11 +50,7 @@ const WorkingProccess = () => {
               <div className={style.number}>3</div>
             </div>
             <div className={style.contentBlock}>
-              <h3>Inspect & Analyze</h3>
-              <p>
-                must to you how all this mistaken idea of denou pleasure and
-                praising.
-              </p>
+              <p>Отлаженные бизнес-процессы</p>
             </div>
           </div>
         </div>

@@ -57,6 +57,7 @@
         align-items: center;
         flex-direction: column;
         position: relative;
+
         .upper {
           width: 345px;
           height: 350px;
@@ -64,6 +65,35 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          position: relative;
+
+          .socials {
+            width: 30px;
+            display: flex;
+            row-gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            top: -100%;
+            right: 10%;
+            z-index: 11;
+            background-color: #fff;
+            border-radius: 8px;
+            transition: 1.5s;
+          }
+          .greenBackground {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #29c75d;
+            opacity: 0.5;
+            z-index: 10;
+            transition: 1s;
+          }
         }
 
         .lower {
@@ -76,6 +106,7 @@
           top: -30px;
           padding: 20px 0;
           transition: background-color 0.5s;
+          z-index: 11;
 
           h3 {
             color: #000;
@@ -91,6 +122,17 @@
           p {
             font-size: 20px;
             color: #999;
+          }
+        }
+
+        &:hover {
+          .greenBackground {
+            width: 100%;
+            transition: 1s;
+          }
+          .socials {
+            top: 5%;
+            transition: 1.5s;
           }
         }
       }

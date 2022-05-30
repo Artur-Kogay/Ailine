@@ -10,8 +10,12 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import PersonIcon from "@mui/icons-material/Person";
-import {Box, Typography, useMediaQuery} from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import Modal from "@mui/material/Modal";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const styleForModal = {
   position: "absolute",
@@ -37,19 +41,13 @@ const Team = () => {
     <div className={style.wrapper}>
       <div className={style.backgroundBlock}>
         <div className={"container"}>
-          <h3 className={style.title}>Our Team Members</h3>
+          <h3 className={style.title}>Наши сотрудники</h3>
           <div className={style.header}>
             <h2>
-              We Business and{" "}
-              <span className={"greenContent"}>It Solutions Of Total</span>
-              -Services
+              Let's go <span className={"greenContent"}>to know our</span> team
             </h2>
             <span className={style.typography}>
-              <p>
-                Lorem ipsum is simply free text dolor sit amet, consectetur
-                notted adipisicing elit sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua lonm andhn.
-              </p>
+              <p>И сегодня мы готовы создавать вместе с вами и для Вас!</p>
             </span>
           </div>
         </div>
@@ -66,50 +64,148 @@ const Team = () => {
           >
             <SwiperSlide className={style.item} onClick={() => handleOpen()}>
               <div className={style.upper}>
+                <div className={style.socials}>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                </div>
+                <div className={style.greenBackground} />
                 {/*<Image src={photoCarousel} />*/}
                 <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
-                  <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
+                  <TerminalIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>Lorem ipsum.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consequuntur, optio.
-                </p>
+                <h3>Surmali Yusupov.</h3>
+                <p>Senior Back-end Developer.</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.item}>
               <div className={style.upper}>
+                <div className={style.socials}>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                </div>
+                <div className={style.greenBackground} />
+
                 {/*<Image src={photoCarousel} />*/}
                 <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
-                  <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
+                  <ViewQuiltIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>Lorem ipsum.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consequuntur, optio.
-                </p>
+                <h3>Erlan Artykbaev.</h3>
+                <p>Middle front-end developer.</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.item}>
               <div className={style.upper}>
+                <div className={style.socials}>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                </div>
+                <div className={style.greenBackground} />
+
                 {/*<Image src={photoCarousel} />*/}
                 <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
-                  <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
+                  <TerminalIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>Lorem ipsum.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consequuntur, optio.
-                </p>
+                <h3>Amangeldiev Ulukman.</h3>
+                <p>Middle Back-end Developer.</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.item}>
+              <div className={style.upper}>
+                <div className={style.socials}>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                </div>
+                <div className={style.greenBackground} />
+
+                {/*<Image src={photoCarousel} />*/}
+                <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
+              </div>
+              <div className={style.lower}>
+                <div className={style.circle}>
+                  <PhoneIphoneIcon sx={{ fontSize: 50 }} />
+                </div>
+                <h3>Nurbek Batyrzhan.</h3>
+                <p>Middle Flutter Developer.</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.item}>
+              <div className={style.upper}>
+                <div className={style.socials}>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                  <a href="#">
+                    <InstagramIcon />
+                  </a>
+                </div>
+                <div className={style.greenBackground} />
+
+                {/*<Image src={photoCarousel} />*/}
+                <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
+              </div>
+              <div className={style.lower}>
+                <div className={style.circle}>
+                  <TerminalIcon sx={{ fontSize: 50 }} />
+                </div>
+                <h3>Boiko Lev.</h3>
+                <p>Middle Back-end Developer.</p>
               </div>
             </SwiperSlide>
           </Swiper>
