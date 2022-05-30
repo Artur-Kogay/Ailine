@@ -49,32 +49,31 @@ const About = () => {
             <Image src={AboutImg} />
           </div>
           <div className={style.rightBlock}>
-            <h3>Our About Us</h3>
-            <h2>We Popular To Provide IT Solutions 35+ Years Of Experience.</h2>
+            <h3>О нас</h3>
+            <h2>
+              Мы развиваемся каждый день, совершенствуем каждого нашего
+              специалиста, совершенствуем качество нашего кода.
+            </h2>
             <p>
-              Lorem ipsum is simply free text dolor sit amet, consec tetur
-              notted adipisicing elit sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua lonm andhn.
+              Мы стремимся всегда быть надежным партнером, совершенствовать
+              качество наших услуг 24/7, и привносить на рынок инновационные
+              IT-решения, повышающие эффективность деятельности наших партнеров.
             </p>
 
             <div className={style.blockAbouts}>
               <div className={style.blockAbout}>
                 <PowerSettingsNewIcon sx={{ color: "#29c75d", fontSize: 70 }} />
                 <div>
-                  <h4>It service for business network.</h4>
-                  <p>
-                    ill give you a complete account of the system, and expound
-                    the actual teachings...
-                  </p>
+                  <h4>О проектах</h4>
+                  <p>Качественный и понятный код...</p>
                 </div>
               </div>
               <div className={style.blockAbout}>
                 <PowerSettingsNewIcon sx={{ color: "#29c75d", fontSize: 70 }} />
                 <div>
-                  <h4>It service for business network.</h4>
+                  <h4>О сотрудниках</h4>
                   <p>
-                    ill give you a complete account of the system, and expound
-                    the actual teachings...
+                    Постоянный профессиональный рост каждого нашего разработчика
                   </p>
                 </div>
               </div>

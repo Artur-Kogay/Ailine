@@ -8,11 +8,11 @@ const WorkingProccess = () => {
   return (
     <div className={style.wrapper}>
       <div className="container">
-        <h3 className={style.title}>Our WORKING PROCCESS</h3>
+        <h3 className={style.title}>Процесс работы</h3>
         <div className={style.header}>
           <h2>
-            Will Change The{" "}
-            <span className="greenContent">Way You Approach</span> Working
+           Мы{" "}
+            <span className="greenContent">меняем подход работы</span> каждому проекту
           </h2>
           <span className={style.typography}>
             <p>
@@ -38,7 +38,7 @@ const WorkingProccess = () => {
           </div>
           <div className={style.item}>
             <div className={style.imgBlock}>
-              <Image src={Work1} />
+              <Image src={Work2} />
               <div className={style.number}>2</div>
             </div>
             <div className={style.contentBlock}>
@@ -51,7 +51,7 @@ const WorkingProccess = () => {
           </div>
           <div className={style.item}>
             <div className={style.imgBlock}>
-              <Image src={Work1} />
+              <Image src={Work3} />
               <div className={style.number}>3</div>
             </div>
             <div className={style.contentBlock}>

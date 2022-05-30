@@ -11,6 +11,7 @@ import photoCarousel2 from "../../assets/jpg/main.jpg";
 import photoCarousel3 from "../../assets/jpg/mainBackground.jpg";
 import { useMediaQuery } from "@mui/material";
 
+
 const Services = () => {
   const isTablet = useMediaQuery("(max-width: 1200px)");
   const isMinTablet = useMediaQuery("(max-width: 860px)");
@@ -19,19 +20,13 @@ const Services = () => {
   return (
     <div className={style.wrapper}>
       <div className="container">
-        <h3>Our Best Services</h3>
+        <h3>Наш Сервис</h3>
         <div className={style.header}>
           <h2>
-            We Business and{" "}
-            <span className={"greenContent"}>It Solutions Of Total</span>
-            -Services
+            Какиее услуги <span className={"greenContent"}>мы предлагаем</span>?
           </h2>
           <span className={style.typography}>
-            <p>
-              Lorem ipsum is simply free text dolor sit amet, consectetur notted
-              adipisicing elit sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua lonm andhn.
-            </p>
+            <p>Data science + Data mining + Open-Data.</p>
           </span>
         </div>
 
@@ -52,11 +47,9 @@ const Services = () => {
                 <div className={style.circle}>
                   <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>Lorem ipsum.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consequuntur, optio.
-                </p>
+                <h3>IT партнерство.</h3>
+                <p>Аутсорсинг наших IT-специалистов под разные задачи.</p>
+                <p>Аутстаффинг наших IT-специалистов под разные задачи</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.item}>
@@ -67,11 +60,9 @@ const Services = () => {
                 <div className={style.circle}>
                   <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>Lorem ipsum.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consequuntur, optio.
-                </p>
+                <h3>Разработка Веб и мобильных приложений.</h3>
+                <p>Мобильные приложения (iOS, Android).</p>
+                <p>Крупные интернет-порталы, а также платформы.</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.item}>
@@ -82,10 +73,12 @@ const Services = () => {
                 <div className={style.circle}>
                   <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>Lorem ipsum.</h3>
+                <h3>Разработка корпоративного программного обеспечения.</h3>
+                <p>CRM системы.</p>
+                <p>ERP системы</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consequuntur, optio.
+                  Любой другой IT-продукт, разработанный с учетом всех ваших
+                  пожеланий.
                 </p>
               </div>
             </SwiperSlide>

@@ -10,18 +10,34 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import PersonIcon from "@mui/icons-material/Person";
-import { useMediaQuery } from "@mui/material";
+import {Box, Typography, useMediaQuery} from "@mui/material";
+import Modal from "@mui/material/Modal";
+
+const styleForModal = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
 
 const Team = () => {
   const isTablet = useMediaQuery("(max-width: 1200px)");
   const isMinTablet = useMediaQuery("(max-width: 860px)");
   const isPhone = useMediaQuery("(max-width: 480px)");
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div className={style.wrapper}>
       <div className={style.backgroundBlock}>
         <div className={"container"}>
-        <h3 className={style.title}>Our Team Members</h3>
+          <h3 className={style.title}>Our Team Members</h3>
           <div className={style.header}>
             <h2>
               We Business and{" "}
@@ -41,14 +57,14 @@ const Team = () => {
       <div className={style.sliderBlock}>
         <div className="container">
           <Swiper
-            slidesPerView={isMinTablet && 1 || 3 && isTablet && 2 || 3}
+            slidesPerView={(isMinTablet && 1) || (3 && isTablet && 2) || 3}
             spaceBetween={30}
             loop={true}
             navigation={!isPhone}
             modules={[Navigation]}
             className={style.mySwiper}
           >
-            <SwiperSlide className={style.item}>
+            <SwiperSlide className={style.item} onClick={() => handleOpen()}>
               <div className={style.upper}>
                 {/*<Image src={photoCarousel} />*/}
                 <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
@@ -99,6 +115,22 @@ const Team = () => {
           </Swiper>
         </div>
       </div>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={styleForModal}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Text in a modal
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          </Typography>
+        </Box>
+      </Modal>
     </div>
   );
 };
