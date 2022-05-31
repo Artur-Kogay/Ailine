@@ -7,31 +7,55 @@ import Image from "next/image";
 import q from "../../assets/swip1.jpg";
 import w from "../../assets/swip2.jpg";
 import e from "../../assets/swip3.jpg";
-import r from "../../assets/swip4.jpg";
 import { useMediaQuery } from "react-responsive";
-import style from "../Services/Services.module.scss";
+import { motion } from 'framer-motion';
 const Largest = () => {
   const isPlanshet = useMediaQuery({ query: "(max-width: 768px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 425px)" });
   return (
     <div className={cl.largest}>
       <div className={cl.largest_inner}>
-        <h2>Our largest blog</h2>
-        <div className={cl.header}>
+        <motion.h2
+          initial='hidden'
+          whileInView='visible'
+          viewport={{once: true}}
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+        >Cost</motion.h2>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          transition={{ duration: 0.5 }}
+          viewport={{once: true}}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+          className={cl.header}>
           <h2>
-            We Business and{" "}
-            <span className={"greenContent"}>It Solutions Of Total</span>
-            -Services
+            COST {" "}
+            <span className={"greenContent"}>OF OUR</span>
+            SERVICES
           </h2>
           <span className={cl.typography}>
             <p>
-              Lorem ipsum is simply free text dolor sit amet, consectetur notted
-              adipisicing elit sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua lonm andhn.
+              Below are the services of our developers, depending on their qualifications
             </p>
           </span>
-        </div>
-        <div className={cl.largest_inner_bottom}>
+        </motion.div>
+        <motion.div
+        viewport={{once: true}}
+          initial='hidden'
+          whileInView='visible'
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+          className={cl.largest_inner_bottom}>
           <Swiper
             resizeObserver={true}
             rewind={true}
@@ -48,11 +72,13 @@ const Largest = () => {
               <Image src={q} className={cl.img} />
               <div className={cl.card_text_block}>
                 <h3>
-                  By Admin Softnet.<span>19 May 2021</span>
+
+                  payment: 1200$/month (or 10$/hour)
+                  {/* <span>19 May 2021</span> */}
                 </h3>
-                <h2>Where people develop the own potential</h2>
+                <h2>Junior developers</h2>
                 <p>
-                  Our offices are located on the traditional, unced. photo booth
+                  Average experience in software development: 1 – 1,5 years
                 </p>
               </div>
             </SwiperSlide>
@@ -60,11 +86,13 @@ const Largest = () => {
               <Image src={w} className={cl.img} />
               <div className={cl.card_text_block}>
                 <h3>
-                  By Admin Softnet.<span>19 May 2021</span>
+
+                  payment: 3500$/month (or 25$/hour)
+                  {/* <span>19 May 2021</span> */}
                 </h3>
-                <h2>Where people develop the own potential</h2>
+                <h2>Middle developers</h2>
                 <p>
-                  Our offices are located on the traditional, unced. photo booth
+                  Average experience in software development: from 3 years
                 </p>
               </div>
             </SwiperSlide>
@@ -73,23 +101,13 @@ const Largest = () => {
 
               <div className={cl.card_text_block}>
                 <h3>
-                  By Admin Softnet.<span>19 May 2021</span>
+
+                  payment: 5000$/month (or 35$/hour)
+                  {/* <span>19 May 2021</span> */}
                 </h3>
-                <h2>Where people develop the own potential</h2>
+                <h2>Senior developers</h2>
                 <p>
-                  Our offices are located on the traditional, unced. photo booth
-                </p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className={cl.swipItem}>
-              <Image src={r} className={cl.img} />
-              <div className={cl.card_text_block}>
-                <h3>
-                  By Admin Softnet.<span>19 May 2021</span>
-                </h3>
-                <h2>Where people develop the own potential</h2>
-                <p>
-                  Our offices are located on the traditional, unced. photo booth
+                  Average experience in software development: from 5 years
                 </p>
               </div>
             </SwiperSlide>
@@ -97,11 +115,13 @@ const Largest = () => {
               <Image src={q} className={cl.img} />
               <div className={cl.card_text_block}>
                 <h3>
-                  By Admin Softnet.<span>19 May 2021</span>
+
+                  payment: 1200$/month (or 10$/hour)
+                  {/* <span>19 May 2021</span> */}
                 </h3>
-                <h2>Where people develop the own potential</h2>
+                <h2>Junior developers</h2>
                 <p>
-                  Our offices are located on the traditional, unced. photo booth
+                  Average experience in software development: 1 – 1,5 years
                 </p>
               </div>
             </SwiperSlide>
@@ -109,11 +129,13 @@ const Largest = () => {
               <Image src={w} className={cl.img} />
               <div className={cl.card_text_block}>
                 <h3>
-                  By Admin Softnet.<span>19 May 2021</span>
+
+                  payment: 3500$/month (or 25$/hour)
+                  {/* <span>19 May 2021</span> */}
                 </h3>
-                <h2>Where people develop the own potential</h2>
+                <h2>Middle developers</h2>
                 <p>
-                  Our offices are located on the traditional, unced. photo booth
+                  Average experience in software development: from 3 years
                 </p>
               </div>
             </SwiperSlide>
@@ -122,28 +144,18 @@ const Largest = () => {
 
               <div className={cl.card_text_block}>
                 <h3>
-                  By Admin Softnet.<span>19 May 2021</span>
+
+                  payment: 5000$/month (or 35$/hour)
+                  {/* <span>19 May 2021</span> */}
                 </h3>
-                <h2>Where people develop the own potential</h2>
+                <h2>Senior developers</h2>
                 <p>
-                  Our offices are located on the traditional, unced. photo booth
-                </p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className={cl.swipItem}>
-              <Image src={r} className={cl.img} />
-              <div className={cl.card_text_block}>
-                <h3>
-                  By Admin Softnet.<span>19 May 2021</span>
-                </h3>
-                <h2>Where people develop the own potential</h2>
-                <p>
-                  Our offices are located on the traditional, unced. photo booth
+                  Average experience in software development: from 5 years
                 </p>
               </div>
             </SwiperSlide>
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

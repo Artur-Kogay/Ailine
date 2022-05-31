@@ -10,33 +10,63 @@ import third from '../../assets/3.jpg';
 import fourth from '../../assets/4.jpg';
 import fifth from '../../assets/5.jpg';
 import sixth from '../../assets/6.jpg';
-
+import { motion } from 'framer-motion';
 const image = [first, second, third, fourth, fifth, sixth];
 
 const Footer = () => {
     return (
         <div className={cl.footer}>
-            <div className={cl.footer_inner}>
-                <div className={cl.first}>
+            <div
+
+                className={cl.footer_inner}>
+                <motion.div
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        visible: { opacity: 1, scale: 1 },
+                        hidden: { opacity: 0, scale: 0 },
+                    }}
+                    className={cl.first}>
                     <h2>AILINE</h2>
-                    <p>Nemo enim ipsam voluptate quia voluptas sit aspernatur aut odit aut fugit, sed quia magni this dolores eos qui ratione .</p>
-                </div>
-                <div className={cl.second}>
+                    <p>WE LOOK FOR A FAST ANSWER FROM YOU!   <br />
+                        We will be glad to cooperate with you .</p>
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    initial='hidden'
+                    whileInView='visible'
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        visible: { opacity: 1, scale: 1 },
+                        hidden: { opacity: 0, scale: 0 },
+                    }}
+                    className={cl.second}>
                     <h2>Quick Links</h2>
                     <p>– Customers Services</p>
                     <p>– T Department</p>
                     <p>– About Our Company</p>
                     <p>– Business Growth</p>
                     <p>– Make An Appointment</p>
-                </div>
-                <div className={cl.third}>
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    initial='hidden'
+                    whileInView='visible'
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        visible: { opacity: 1, scale: 1 },
+                        hidden: { opacity: 0, scale: 0 },
+                    }}
+                    className={cl.third}>
                     <h2>Our Contacts</h2>
                     <div className={cl.third_blocks}>
                         <div className={cl.third_blocks_img_block} style={{ width: "40px" }}>
                             <Image src={location} />
                         </div>
                         <p>Address: <a href="https://www.google.com/maps/@42.8631099,74.5776766,12z">
-                           Kyrgyzstan, Bishkek city </a></p>
+                            Kyrgyzstan, Bishkek city </a></p>
                     </div>
                     <div className={cl.third_blocks}>
                         <div className={cl.third_blocks_img_block}>
@@ -54,8 +84,17 @@ const Footer = () => {
                             <br />
                             Website: yourwebsite.com</p>
                     </div>
-                </div>
-                <div className={cl.fourth}>
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    initial='hidden'
+                    whileInView='visible'
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        visible: { opacity: 1, scale: 1 },
+                        hidden: { opacity: 0, scale: 0 },
+                    }}
+                    className={cl.fourth}>
                     <h2>Our Gallery</h2>
                     <div className={cl.fourth_inner}>
                         {image.map((item, index) => (
@@ -64,7 +103,7 @@ const Footer = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
