@@ -10,7 +10,7 @@ import photoCarousel from "../../assets/jpg/carousel2.jpg";
 import photoCarousel2 from "../../assets/jpg/main.jpg";
 import photoCarousel3 from "../../assets/jpg/mainBackground.jpg";
 import { useMediaQuery } from "@mui/material";
-
+import { motion } from "framer-motion";
 
 const Services = () => {
   const isTablet = useMediaQuery("(max-width: 1200px)");
@@ -20,17 +20,48 @@ const Services = () => {
   return (
     <div className={style.wrapper}>
       <div className="container">
-        <h3>Наш Сервис</h3>
-        <div className={style.header}>
+        <motion.h3
+          viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+        >
+          Our Service
+        </motion.h3>
+        <motion.div
+          className={style.header}
+          viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+        >
           <h2>
-            Какиее услуги <span className={"greenContent"}>мы предлагаем</span>?
+            What services <span className={"greenContent"}>we offer</span>?
           </h2>
           <span className={style.typography}>
             <p>Data science + Data mining + Open-Data.</p>
           </span>
-        </div>
+        </motion.div>
 
-        <div className={style.slider}>
+        <motion.div
+          className={style.slider}
+          viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5, delay: 0.5 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+        >
           <Swiper
             slidesPerView={(isMinTablet && 1) || (3 && isTablet && 2) || 3}
             spaceBetween={30}
@@ -47,9 +78,9 @@ const Services = () => {
                 <div className={style.circle}>
                   <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>IT партнерство.</h3>
-                <p>Аутсорсинг наших IT-специалистов под разные задачи.</p>
-                <p>Аутстаффинг наших IT-специалистов под разные задачи</p>
+                <h3>IT partnership.</h3>
+                <p>Outsourcing of our IT specialists for different tasks.</p>
+                <p>Outstaffing of our IT specialists for different tasks.</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.item}>
@@ -60,9 +91,9 @@ const Services = () => {
                 <div className={style.circle}>
                   <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>Разработка Веб и мобильных приложений.</h3>
-                <p>Мобильные приложения (iOS, Android).</p>
-                <p>Крупные интернет-порталы, а также платформы.</p>
+                <h3>Development of Web and mobile applications.</h3>
+                <p>Mobile applications (iOS, Android).</p>
+                <p>Major Internet portals and platforms.</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.item}>
@@ -73,17 +104,17 @@ const Services = () => {
                 <div className={style.circle}>
                   <PowerSettingsNewIcon sx={{ fontSize: 50 }} />
                 </div>
-                <h3>Разработка корпоративного программного обеспечения.</h3>
-                <p>CRM системы.</p>
-                <p>ERP системы</p>
+                <h3>Enterprise software development.</h3>
+                <p>CRM systems.</p>
+                <p>ERP systems.</p>
                 <p>
-                  Любой другой IT-продукт, разработанный с учетом всех ваших
-                  пожеланий.
+                  Any other IT product developed taking into account all your
+                  wishes.
                 </p>
               </div>
             </SwiperSlide>
           </Swiper>
-        </div>
+        </motion.div>
 
         <div className={style.btn}>
           <a>View all services</a>

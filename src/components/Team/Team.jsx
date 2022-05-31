@@ -16,6 +16,7 @@ import TerminalIcon from "@mui/icons-material/Terminal";
 import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { motion } from "framer-motion";
 
 const styleForModal = {
   position: "absolute",
@@ -41,18 +42,52 @@ const Team = () => {
     <div className={style.wrapper}>
       <div className={style.backgroundBlock}>
         <div className={"container"}>
-          <h3 className={style.title}>Наши сотрудники</h3>
-          <div className={style.header}>
+          <motion.h3
+            className={style.title}
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
+            Our Employees
+          </motion.h3>
+          <motion.div
+            className={style.header}
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h2>
               Let's go <span className={"greenContent"}>to know our</span> team
             </h2>
             <span className={style.typography}>
-              <p>И сегодня мы готовы создавать вместе с вами и для Вас!</p>
+              <p>
+                And today we are ready to create together with you and for you!
+              </p>
             </span>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className={style.sliderBlock}>
+      <motion.div
+        className={style.sliderBlock}
+        viewport={{ once: true }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.5, delay: 0.5 }}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+      >
         <div className="container">
           <Swiper
             slidesPerView={(isMinTablet && 1) || (3 && isTablet && 2) || 3}
@@ -80,7 +115,7 @@ const Team = () => {
                 </div>
                 <div className={style.greenBackground} />
                 {/*<Image src={photoCarousel} />*/}
-                <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
+                <PersonIcon sx={{ fontSize: "300px", color: "#ffc501" }} />
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
@@ -109,7 +144,7 @@ const Team = () => {
                 <div className={style.greenBackground} />
 
                 {/*<Image src={photoCarousel} />*/}
-                <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
+                <PersonIcon sx={{ fontSize: "300px", color: "#ffc501" }} />
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
@@ -138,7 +173,7 @@ const Team = () => {
                 <div className={style.greenBackground} />
 
                 {/*<Image src={photoCarousel} />*/}
-                <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
+                <PersonIcon sx={{ fontSize: "300px", color: "#ffc501" }} />
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
@@ -168,7 +203,7 @@ const Team = () => {
                 <div className={style.greenBackground} />
 
                 {/*<Image src={photoCarousel} />*/}
-                <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
+                <PersonIcon sx={{ fontSize: "300px", color: "#ffc501" }} />
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
@@ -198,7 +233,7 @@ const Team = () => {
                 <div className={style.greenBackground} />
 
                 {/*<Image src={photoCarousel} />*/}
-                <PersonIcon sx={{ fontSize: "300px", color: "#29c75d" }} />
+                <PersonIcon sx={{ fontSize: "300px", color: "#ffc501" }} />
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
@@ -210,7 +245,7 @@ const Team = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-      </div>
+      </motion.div>
 
       <Modal
         open={open}

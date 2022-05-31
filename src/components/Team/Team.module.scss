@@ -20,7 +20,9 @@
 
       .typography {
         padding-left: 20px;
-        border-left: 10px solid #29c75d;
+        border-left: 10px solid #ffc501;
+        display: flex;
+        align-items: center;
 
         p {
           font-size: 20px;
@@ -37,7 +39,7 @@
 
         .typography {
           border: none;
-          border-top: 10px solid #29c75d;
+          border-top: 10px solid #ffc501;
         }
       }
     }
@@ -89,7 +91,7 @@
             top: 0;
             width: 0%;
             height: 100%;
-            background-color: #29c75d;
+            background-color: #ffc501;
             opacity: 0.5;
             z-index: 10;
             transition: 1s;
@@ -99,7 +101,7 @@
         .lower {
           width: 80%;
           height: 50%;
-          border-bottom: 5px solid #29c75d;
+          border-bottom: 5px solid #ffc501;
           background-color: #fff;
           text-align: center;
           position: relative;

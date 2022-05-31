@@ -4,55 +4,107 @@ import style from "./WorkingProccess.module.scss";
 import Work1 from "../../assets/png/work-1.png";
 import Work2 from "../../assets/png/work-2.png";
 import Work3 from "../../assets/png/work-3.png";
+import { motion } from "framer-motion";
+
 const WorkingProccess = () => {
   return (
     <div className={style.wrapper}>
       <div className="container">
-        <h3 className={style.title}>Процесс работы</h3>
-        <div className={style.header}>
+        <motion.h3
+          className={style.title}
+          viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+        >
+          Proccess of Work
+        </motion.h3>
+        <motion.div
+          className={style.header}
+          viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+        >
           <h2>
-            Мы <span className="greenContent">меняем подход работы</span>{" "}
-            каждому проекту
+            We are{" "}
+            <span className="greenContent">changing the way we work</span> with
+            each project
           </h2>
           <span className={style.typography}>
             <p>
-              Lorem ipsum is simply free text dolor sit amet, consectetur notted
-              adipisicing elit sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua lonm andhn.
+              Each project needs a thorough check from our best programmers and
+              their quality development.
             </p>
           </span>
-        </div>
+        </motion.div>
         <div className={style.items}>
-          <div className={style.item}>
+          <motion.div
+            className={style.item}
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5, delay: 0.5 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
+          >
             <div className={style.greenBackground}></div>
             <div className={style.imgBlock}>
               <Image src={Work1} />
               <div className={style.number}>1</div>
             </div>
             <div className={style.contentBlock}>
-              <p>Качественный и понятный код</p>
+              <p>High-quality and understandable code</p>
             </div>
-          </div>
-          <div className={style.item}>
+          </motion.div>
+          <motion.div
+            className={style.item}
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5, delay: 1 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
+          >
             <div className={style.imgBlock}>
               <Image src={Work2} />
               <div className={style.number}>2</div>
             </div>
             <div className={style.contentBlock}>
-              <p>
-                Постоянный профессиональный рост каждого нашего разработчика
-              </p>
+              <p>Continuous professional growth of each of our developers</p>
             </div>
-          </div>
-          <div className={style.item}>
+          </motion.div>
+          <motion.div
+            className={style.item}
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5, delay: 1.5 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
+          >
             <div className={style.imgBlock}>
               <Image src={Work3} />
               <div className={style.number}>3</div>
             </div>
             <div className={style.contentBlock}>
-              <p>Отлаженные бизнес-процессы</p>
+              <p>Well-established business processes</p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className={style.btn}>
           <a>View all services</a>
