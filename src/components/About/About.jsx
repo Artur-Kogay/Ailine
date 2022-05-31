@@ -87,7 +87,7 @@ const About = () => {
             }}
           >
             <div className={style.greenBlock} />
-            <Image src={AboutImg} />
+            <Image src={AboutImg} alt={"img"}/>
           </motion.div>
           <motion.div
             className={style.rightBlock}
@@ -152,14 +152,14 @@ const About = () => {
             <div className={style.hr} />
             <div className={style.founder}>
               <div className={style.imgBlock}>
-                <Image src={Founder} />
+                <Image src={Founder} alt={"img"}/>
                 <span>
                   <h4>Marc Antoine Brane</h4>
                   <p>Co-Founder</p>
                 </span>
               </div>
               <div className={style.signature}>
-                <Image src={Signature} />
+                <Image src={Signature} alt={"img"}/>
               </div>
             </div>
           </motion.div>

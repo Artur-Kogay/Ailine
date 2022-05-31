@@ -76,56 +76,56 @@ const Ompanies = () => {
             modules={[Autoplay]}
           >
             <SwiperSlide className={cl.swipItem}>
-              <Image src={q} className={cl.img} />
+              <Image src={q} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>Medcheck - mobile App(IOS/Android)</h3>
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={w} className={cl.img} />
+              <Image src={w} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>Navi Taxi - mobile App (IOS/Android)</h3>
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={e} className={cl.img} />
+              <Image src={e} className={cl.img} alt={"img"}/>
 
               <div className={cl.card_text_block}>
                 <h3>KVADRAT.KG - Web App</h3>
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={r} className={cl.img} />
+              <Image src={r} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>SANRIJAPAN.COM - Web App</h3>
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={t} className={cl.img} />
+              <Image src={t} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>Agrimatco - mobile App (Android)</h3>
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={y} className={cl.img} />
+              <Image src={y} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>Mayram market - mobile App (IOS/Android)</h3>
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={u} className={cl.img} />
+              <Image src={u} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>G Shop- mobile App (IOS/Android)</h3>
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={i} className={cl.img} />
+              <Image src={i} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>T-EXPRESS.US - Web App</h3>
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={o} className={cl.img} />
+              <Image src={o} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>DLXLIMOUSINE.COM - Web App</h3>
               </div>

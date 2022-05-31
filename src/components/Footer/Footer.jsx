@@ -63,14 +63,14 @@ const Footer = () => {
                     <h2>Our Contacts</h2>
                     <div className={cl.third_blocks}>
                         <div className={cl.third_blocks_img_block} style={{ width: "40px" }}>
-                            <Image src={location} />
+                            <Image src={location} alt={"img"}/>
                         </div>
                         <p>Address: <a href="https://www.google.com/maps/@42.8631099,74.5776766,12z">
                             Kyrgyzstan, Bishkek city </a></p>
                     </div>
                     <div className={cl.third_blocks}>
                         <div className={cl.third_blocks_img_block}>
-                            <Image src={call} />
+                            <Image src={call} alt={"img"}/>
                         </div>
                         <p>Phone: <a href="tel:+996 (555) 999 953">+996 (555) 999 953</a>
                             <br />
@@ -78,7 +78,7 @@ const Footer = () => {
                     </div>
                     <div className={cl.third_blocks}>
                         <div className={cl.third_blocks_img_block}>
-                            <Image src={web} />
+                            <Image src={web} alt={"img"}/>
                         </div>
                         <p>Email: <a href="mailto: ailinecompany.kg@gmail.com"> ailinecompany.kg@gmail.com</a>
                             <br />
@@ -99,7 +99,7 @@ const Footer = () => {
                     <div className={cl.fourth_inner}>
                         {image.map((item, index) => (
                             <div key={index}>
-                                <Image src={item} />
+                                <Image src={item} alt={"img"}/>
                             </div>
                         ))}
                     </div>

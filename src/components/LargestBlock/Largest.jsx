@@ -69,7 +69,7 @@ const Largest = () => {
             modules={[Autoplay]}
           >
             <SwiperSlide className={cl.swipItem}>
-              <Image src={q} className={cl.img} />
+              <Image src={q} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>
 
@@ -83,7 +83,7 @@ const Largest = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={w} className={cl.img} />
+              <Image src={w} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>
 
@@ -97,7 +97,7 @@ const Largest = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={e} className={cl.img} />
+              <Image src={e} className={cl.img} alt={"img"}/>
 
               <div className={cl.card_text_block}>
                 <h3>
@@ -112,7 +112,7 @@ const Largest = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={q} className={cl.img} />
+              <Image src={q} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>
 
@@ -126,7 +126,7 @@ const Largest = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={w} className={cl.img} />
+              <Image src={w} className={cl.img} alt={"img"}/>
               <div className={cl.card_text_block}>
                 <h3>
 
@@ -140,7 +140,7 @@ const Largest = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className={cl.swipItem}>
-              <Image src={e} className={cl.img} />
+              <Image src={e} className={cl.img} alt={"img"}/>
 
               <div className={cl.card_text_block}>
                 <h3>

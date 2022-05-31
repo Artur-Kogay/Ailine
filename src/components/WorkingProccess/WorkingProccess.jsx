@@ -60,7 +60,7 @@ const WorkingProccess = () => {
           >
             <div className={style.greenBackground}></div>
             <div className={style.imgBlock}>
-              <Image src={Work1} />
+              <Image src={Work1} alt={"img"} />
               <div className={style.number}>1</div>
             </div>
             <div className={style.contentBlock}>
@@ -79,7 +79,7 @@ const WorkingProccess = () => {
             }}
           >
             <div className={style.imgBlock}>
-              <Image src={Work2} />
+              <Image src={Work2} alt={"img"}/>
               <div className={style.number}>2</div>
             </div>
             <div className={style.contentBlock}>
@@ -98,7 +98,7 @@ const WorkingProccess = () => {
             }}
           >
             <div className={style.imgBlock}>
-              <Image src={Work3} />
+              <Image src={Work3} alt={"img"}/>
               <div className={style.number}>3</div>
             </div>
             <div className={style.contentBlock}>

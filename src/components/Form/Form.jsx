@@ -94,7 +94,7 @@ const Form = () => {
               hidden: { opacity: 0, scale: 0 },
             }} className={cl.contact_now_inner}>
             <div className={cl.contact_now_inner_left}>
-              <Image src={icon} />
+              <Image src={icon} alt={"img"}/>
               <h3>Start Your Best it-Service for Business</h3>
             </div>
             <div className={cl.contact_now_inner_right}>

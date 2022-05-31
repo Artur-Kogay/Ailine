@@ -67,7 +67,7 @@ const Team = () => {
             }}
           >
             <h2>
-              Let's go <span className={"greenContent"}>to know our</span> team
+              Let&apos;s go <span className={"greenContent"}>to know our</span> team
             </h2>
             <span className={style.typography}>
               <p>

@@ -72,7 +72,7 @@ const Services = () => {
           >
             <SwiperSlide className={style.item}>
               <div className={style.upper}>
-                <Image src={photoCarousel} />
+                <Image src={photoCarousel} alt={"img"}/>
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
@@ -85,7 +85,7 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide className={style.item}>
               <div className={style.upper}>
-                <Image src={photoCarousel2} />
+                <Image src={photoCarousel2} alt={"img"}/>
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
@@ -98,7 +98,7 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide className={style.item}>
               <div className={style.upper}>
-                <Image src={photoCarousel3} />
+                <Image src={photoCarousel3} alt={"img"}/>
               </div>
               <div className={style.lower}>
                 <div className={style.circle}>
